@@ -1,0 +1,34 @@
+{
+  "name": "mcd-duo-wrapped",
+  "version": "1.0.0",
+  "description": "麦麦搭子契合度报告 (McD Duo Wrapped) - 基于麦当劳中国官方 MCP 的双人/多人合体年度回忆与口味默契度报告",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcd-duo": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "export-profile": "tsx src/cli.ts export",
+    "compare": "tsx src/cli.ts compare",
+    "demo": "tsx src/cli.ts demo",
+    "serve": "tsx src/server.ts"
+  },
+  "keywords": [
+    "mcdonalds",
+    "mcp",
+    "wrapped",
+    "model-context-protocol",
+    "agent-skill"
+  ],
+  "author": "xunxuntj",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
